@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title><%= title %></title>
+    <!-- CSS only -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel='stylesheet' href='/stylesheets/style.css' />
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"></script>
+  </head>
+  <body>
+    <h1><%= title %></h1>
+    <p>Welcome to <%= title %></p>
+
+    <div class="accordion" id="accordion">
+      <div class="accordion-item">
+        <p class="accordion-header" id="headingOne">
+          <button class="accordion-button" type="button" 
+            data-bs-toggle="collapse" data-bs-target="#collapseOne" 
+            aria-expanded="false" aria-controls="collapseOne">
+            Create form
+          </button>
+        </p>
+        <div id="collapseOne" class="accordion-collapse collapse" 
+          aria-labelledby="headingOne" data-bs-parent="#accordion">
+          <div class="accordion-body">
+            <form method="post" action="/">
+              <div class="form-group">
+                <label>名前</label>
+                <input type="text" name="name" 
+                  class="form-control form-control-sm">
+              </div>
+              <div class="form-group">
+                <label class="mt-2">点数</label>
+                <input type="number" name="score" 
+                  class="form-control form-control-sm">
+              </div>
+              <div class="form-group">
+                <label class="mt-2">ステータス</label>
+                <input type="text" name="status" 
+                  class="form-control form-control-sm">
+              </div>
+              <div class="form-group">
+                <label class="mt-2">分類</label>
+                <input type="text" name="type" 
+                  class="form-control form-control-sm">
+              </div>
+              <input type="submit" class="btn btn-primary mt-2" 
+                value="Create">
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <table class="table">
+      <thead><tr>
+        <th>名前</th>
+        <th>点数</th>
+        <th>ステータス</th>
+        <th>分類</th>
+      </tr></thead>
+      <tbody>
+        <% for(let items of data) { %>
+          <tr>
+            <% for(let item of items) { %>
+              <td><%=item %></td>
+            <% } %>
+          </tr>
+        <% } %>
+      </tbody>
+    </table>
+
+
+
+  </body>
+</html>
