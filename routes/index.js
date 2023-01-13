@@ -2,8 +2,8 @@ var express = require('express');
 const { Client } = require('@notionhq/client');
 var router = express.Router();
 
-secret_key = 'secret_JF9kCsSLYfNEXyjBu7whuh7GmeqkPmtvb2Umy4Q1KCh'
-db_id = '22b688a6058246f5afb0c5a07410e9ab'
+secret_key = 'secret_LAdznzDIRFB8nAz70O1XaXL09g851sjyLBP7vJBoOMB'
+db_id = '94934973a0e548f9be85bf1454b45ab7'
 
 var router = express.Router();
 const notion = new Client({
