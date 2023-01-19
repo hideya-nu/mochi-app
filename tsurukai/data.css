@@ -1,0 +1,20 @@
+body {
+    padding-top: 30px;
+    width: 400px;
+    margin: auto;
+  }
+  
+  #info {
+    width: 150px;
+    padding: 10px;
+    background-color:#aaa;
+    color:#fff;
+    font-weight: bold;
+    line-height: 1.5;
+  }
+  #left {
+    float: left;
+  }
+  #right {
+    float: right;
+  }
