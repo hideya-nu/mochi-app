@@ -65,10 +65,8 @@
   border: 5px solid black;
 }
 
-.kattuimg {
-  display: block;
-  width: 60%;
-  margin: 0 auto;
+.kattuh2 {
+  font-size: 30px;
 }
 
 .kattup, .kattuli {
