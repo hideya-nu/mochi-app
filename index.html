@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="ja">
+<head>
+  <meta charset="UTF-8">
+  <title>教科書マッチングアプリ</title>
+  <link rel="stylesheet" href="styles/main.css">
+  <script type="text/javascript" src="scripts/Main.js"></script>
+</head>
+
+<body>
+    <header>
+      <h1 class="header">教科書マッチングアプリ</h1>
+      <form method="get" action="#" class="searchText">
+        <input type="text" size="98" name="search" id="tex" placeholder="   ご希望の教科書名を入力してください">
+        <input type="submit" name="button" value="検索" onclick="clickSearch()">
+        <input type="exhibit" name="button" value="出品" onclick="location.href='https://docs.google.com/forms/d/e/1FAIpQLScIem_JB_AJjtgpHVD7lSOko6YtIqboVz8hBIQk-Z_xpzBclg/viewform'">
+      </form>
+
+      <button onclick = "getIssuesFromNotionDatabase()">GET</button>
+
+    </header>
+</body>
+</html>

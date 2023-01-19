@@ -1,0 +1,48 @@
+.header{
+    font-family: FontAwesome;
+    font-size: 2.8em;
+}
+
+.searchText{
+    position: relative;
+    width:800px;
+  }
+  .searchText input[type="text"]{
+    border: 3px solid black;
+    padding: 10px 5px;
+    border-radius: 50px;
+    height: 2.2em;
+    overflow: hidden;
+  }
+  .searchText input[type="submit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    border: 3px solid black;
+    background: lightskyblue;
+    color: black;
+    width: 3.5em;
+    height: 3.5em;
+    border-radius: 50%;
+    outline : none;
+    position: absolute;
+    top: -8px;
+    right: -15px;
+  }
+  .searchText input[type="exhibit"]{
+    cursor: pointer;
+    font-family: FontAwesome;
+    font-size: 1.3em;
+    text-align: center;
+    border: 3px solid black;
+    background: lightskyblue;
+    color: black;
+    width: 10em;
+    height: 3.5em;
+    border-radius: 0%;
+    outline : none;
+    position: absolute;
+    top: -15px;
+    right: -1000px;
+  }
+  
