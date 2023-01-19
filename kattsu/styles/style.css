@@ -1,10 +1,10 @@
-html {
+.htmlKattu {
     background-color: white;
     font-size: 10px;
     font-family: "Open Sans", sans-serif;
 }
 
-h1 {
+.kattuh1 {
     margin: 0;
     padding: 20px 0;
     color: #008080;
@@ -13,7 +13,7 @@ h1 {
     text-shadow: 3px 3px 1px black;
 }
 
-body {
+.kattuB {
     width: 600px;
     margin: 0 auto;
     background-color: skyblue;
@@ -21,13 +21,13 @@ body {
     border: 5px solid black;
 }
 
-img {
+.kattuimg {
     display: block;
     width: 60%;
     margin: 0 auto;
 }
 
-p, li {
+.kattup, .kattuli {
     font-size: 16px;
     line-height: 2;
     letter-spacing: 1px;

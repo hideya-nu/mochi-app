@@ -1,48 +1,79 @@
-.header{
-    font-family: FontAwesome;
-    font-size: 2.8em;
-}
 
 .searchText{
-    position: relative;
-    width:800px;
-  }
-  .searchText input[type="text"]{
-    border: 3px solid black;
-    padding: 10px 5px;
-    border-radius: 50px;
-    height: 2.2em;
-    overflow: hidden;
-  }
-  .searchText input[type="submit"]{
-    cursor: pointer;
-    font-family: FontAwesome;
-    font-size: 1.3em;
-    border: 3px solid black;
-    background: lightskyblue;
-    color: black;
-    width: 3.5em;
-    height: 3.5em;
-    border-radius: 50%;
-    outline : none;
-    position: absolute;
-    top: -8px;
-    right: -15px;
-  }
-  .searchText input[type="exhibit"]{
-    cursor: pointer;
-    font-family: FontAwesome;
-    font-size: 1.3em;
-    text-align: center;
-    border: 3px solid black;
-    background: lightskyblue;
-    color: black;
-    width: 10em;
-    height: 3.5em;
-    border-radius: 0%;
-    outline : none;
-    position: absolute;
-    top: -15px;
-    right: -1000px;
-  }
+  position: relative;
+  width:800px;
+}
+.searchText input[type="text"]{
+  border: 3px solid black;
+  padding: 10px 5px;
+  border-radius: 50px;
+  height: 2.2em;
+  overflow: hidden;
+}
+.searchText input[type="submit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  border: 3px solid black;
+  background: lightskyblue;
+  color: black;
+  width: 3.5em;
+  height: 3.5em;
+  border-radius: 50%;
+  outline : none;
+  position: absolute;
+  top: -8px;
+  right: -15px;
+}
+.searchText input[type="exhibit"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  text-align: center;
+  border: 3px solid black;
+  background: lightskyblue;
+  color: black;
+  width: 10em;
+  height: 3.5em;
+  border-radius: 0%;
+  outline : none;
+  position: absolute;
+  top: -15px;
+  right: -1000px;
+}
+
+.htmlKattu {
+  background-color: white;
+  font-size: 10px;
+  font-family: "Open Sans", sans-serif;
+}
+
+.kattuh1 {
+  margin: 0;
+  padding: 20px 0;
+  color: #008080;
+  font-size: 60px;
+  text-align: center;
+  text-shadow: 3px 3px 1px black;
+}
+
+.kattuB {
+  width: 600px;
+  margin: 0 auto;
+  background-color: skyblue;
+  padding: 0 20px 20px 20px;
+  border: 5px solid black;
+}
+
+.kattuimg {
+  display: block;
+  width: 60%;
+  margin: 0 auto;
+}
+
+.kattup, .kattuli {
+  font-size: 16px;
+  line-height: 2;
+  letter-spacing: 1px;
+}
   
