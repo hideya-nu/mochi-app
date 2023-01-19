@@ -1,4 +1,4 @@
-const myHeading = document.querySelector('h1');
+/*const myHeading = document.querySelector('h1');
 //const { Client } = require("@notionhq/client");
 import { Client } from '@notionhq/client';
 
@@ -16,4 +16,13 @@ var data03;
 let pass = 100;
 function print_pass() {
   alert(pass);
-};
+};*/
+
+window.onload = function() {
+  const url = new URL(window.location.href);
+  const params = url.searchParams;
+  console.log(params);
+  const textName = params.get("textName");
+  const span = document.getElementById("receivedTextName");
+  span.innerText = textName;
+}

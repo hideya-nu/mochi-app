@@ -47,3 +47,5 @@ async function getIssuesFromNotionDatabase() {
   
     return issues
   }
+
+
