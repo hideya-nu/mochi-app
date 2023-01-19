@@ -19,26 +19,6 @@ h1, h2 {
   text-align: center;
 }
 
-h1 {
-  font-size: 5rem;
-  background: url(icons/bean_can.png) no-repeat 20% center, url(icons/bean_can.png) no-repeat 80% center;
-  background-size: 48px 48px;
-}
-
-h2 {
-  font-size: 2rem;
-  color: yellow;
-  text-align: right;
-  width: 160px;
-  position: absolute;
-  right: 4%;
-  z-index: 3000;
-  text-shadow: 2px 2px 1px black;
-  line-height: 2rem;
-  padding-top: 0.3rem;
-}
-
-
 
 p, label, input, select, button, li {
   font-size: 1.5rem;
@@ -146,35 +126,7 @@ section img {
   bottom: 0px;
 }
 
-section p {
-  color: yellow;
-  background: black;
-  width: 50px;
-  height: 50px;
-  line-height: 50px;
-  text-align: center;
-  border-radius: 50%;
-  box-shadow: 2px 2px 1px yellow;
-  position: absolute;
-  right: 10px;
-  bottom: -6px;
-  z-index: 2000;
-}
 
-.vegetables {
-  background: black url(icons/vegetable.png) no-repeat 2px 2px;
-  background-size: 24px 24px;
-}
-
-.meat {
-  background: black url(icons/meat.png) no-repeat 2px 2px;
-  background-size: 24px 24px;
-}
-
-.soup {
-  background: black url(icons/soup.png) no-repeat 2px 2px;
-  background-size: 24px 24px;
-}
 
 /* mobile responsive styles*/
 @media screen and (max-width: 800px){
