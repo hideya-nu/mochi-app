@@ -6,10 +6,6 @@ const notion = new Client({ auth: process.env.secret_key })
 
 const databaseId = process.env.db_id
 
-function clickSearch(){
-    var textName = document.getElementById("tex").value;
-    alert(textName);
-}
 
 function test(){
     //notionのデータを出力する
