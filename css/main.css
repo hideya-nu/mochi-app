@@ -39,6 +39,23 @@
   outline : none;
   position: absolute;
   top: -15px;
+  right: -700px;
+}
+
+.searchText input[type="infomation"]{
+  cursor: pointer;
+  font-family: FontAwesome;
+  font-size: 1.3em;
+  text-align: center;
+  border: 3px solid black;
+  background: lightskyblue;
+  color: black;
+  width: 10em;
+  height: 3.5em;
+  border-radius: 0%;
+  outline : none;
+  position: absolute;
+  top: -15px;
   right: -1000px;
 }
 
@@ -83,3 +100,56 @@
   text-decoration: none;
   color: white;
 }
+
+.infohtml {
+  font-size: 100%;
+}
+
+.infobody {
+  background-repeat: repeat;
+}
+
+.infoheader {
+  font-size: 20px;
+}
+
+.infoul {
+text-align: right;
+padding-right: 60px;
+font-size: 30px;
+} 
+
+.backhome {
+  border-radius: 5px;
+  font-size: 20px;
+  background-color: gray;
+  padding: 20px 20px;
+  text-decoration: none;
+  color: white;
+}
+.infoul2 {
+  text-align: center;
+  font-size: 150px;
+}
+
+.info {
+  padding: 90px 60px;
+  font-size: 25px;
+  background-color: gray;
+  text-decoration: none;
+  color: white;
+}
+
+
+.infoli {
+color: white;
+display: inline-block;
+width: 10%
+}
+
+.infoli:hover, .backhome:hover {
+color: red;
+}
+
+
+
