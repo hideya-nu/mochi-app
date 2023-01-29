@@ -12,8 +12,22 @@ function print_pass() {
   alert(pass);
 };
 
+const databaseId = '94934973a0e548f9be85bf1454b45ab7'; //間にハイフンがなくて大丈夫
 
-function getSeisaki() {
+// Initializing a client
+const main = async () => {
+    const notion = new Client({
+		auth: `secret_OEplBkvVCBw99DMMli7IS80W1gshHYZ97MAF5qTI6dI`,
+    })
+      
+    const response = await notion.databases.retrieve({ database_id: databaseId });
+    console.log(response); 
+}
+
+main();
+
+
+/*function getSeisaki() {
   //const secret_key = 'secret_LAdznzDIRFB8nAz70O1XaXL09g851sjyLBP7vJBoOMB';
   const secret_key = 'secret_OEplBkvVCBw99DMMli7IS80W1gshHYZ97MAF5qTI6dI';
 
@@ -57,7 +71,7 @@ function getSeisaki() {
 var notion_db = new XMLHttpRequest();
 
 notion_db.open('GET','/');
-
+*/
 
 
 
