@@ -4,9 +4,8 @@
   width:800px;
 }
 .searchText input[type="text"]{
-  border: 3px solid black;
+  border: 2px solid gray;
   padding: 10px 5px;
-  border-radius: 50px;
   height: 2.2em;
   overflow: hidden;
 }
@@ -30,9 +29,9 @@
   font-family: FontAwesome;
   font-size: 1.3em;
   text-align: center;
-  border: 3px solid black;
-  background: lightskyblue;
-  color: black;
+  border: 1px solid gray;
+  background: gray;
+  color:white;
   width: 10em;
   height: 3.5em;
   border-radius: 0%;
@@ -47,9 +46,9 @@
   font-family: FontAwesome;
   font-size: 1.3em;
   text-align: center;
-  border: 3px solid black;
-  background: lightskyblue;
-  color: black;
+  border: 1px solid gray;
+  background: gray;
+  color: white;
   width: 10em;
   height: 3.5em;
   border-radius: 0%;
@@ -93,9 +92,8 @@
 }
 
 .return {
-  border-radius: 5px;
   font-size: 1.3em;
-  background-color: red;
+  background-color: gray;
   padding: 30px 50px;
   text-decoration: none;
   color: white;
@@ -147,7 +145,7 @@ display: inline-block;
 width: 10%
 }
 
-.infoli:hover, .backhome:hover {
+.return:hover, .infoli:hover, .backhome:hover {
 color: red;
 }
 
