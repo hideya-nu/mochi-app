@@ -5,8 +5,11 @@ const PDFImage = require("pdf-image").PDFImage;
 const pdfImage = new PDFImage("/images/企画書.pdf");
 const { Client } = require("@notionhq/client");
 
-const hostname = '127.0.0.1';
-const port = 3000;
+//const hostname = '127.0.0.1';
+//const port = 3000;
+
+const hostname = '0.0.0.0';
+const port = 8000;
 
 const server = http.createServer(RouteSetting);
 
