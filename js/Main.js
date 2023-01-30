@@ -46,7 +46,6 @@ async function getIssuesFromNotionDatabase() {
 
 
   function myFunction() {
-    // Declare variables
     var input, filter, ul, li, a, i, txtValue;
     input = document.getElementById("tex");
     filter = input.value.toUpperCase();
