@@ -17,6 +17,7 @@ const server = http.createServer(RouteSetting);
 const indexPage = fs.readFileSync('./html/index.html', 'UTF-8');
 const textbookPage = fs.readFileSync('./html/textbook.html', 'UTF-8');
 const exhibitPage = fs.readFileSync('./html/exhibit.html', 'UTF-8');
+const manualPage = fs.readFileSync('./html/manual.html', 'UTF-8');
 const informationPage = fs.readFileSync('./html/information.html', 'UTF-8');
 
 const mainCss = fs.readFileSync('./css/main.css', 'UTF-8');
@@ -67,6 +68,13 @@ function RouteSetting(req, res) {
         //'textbook.html'にアクセスした時の処理
         res.writeHead(200, {'Content-Type': 'text/html'});
         res.write(informationPage);
+        res.end();
+        break;
+
+      case '/html/manual.html':
+        //'textbook.html'にアクセスした時の処理
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        res.write(manualPage);
         res.end();
         break;
 
