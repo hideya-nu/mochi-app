@@ -1,5 +1,5 @@
 {
-  "type":"commonjs",
+  "type": "commonjs",
   "name": "notion-app",
   "version": "0.0.0",
   "private": true,
@@ -8,11 +8,14 @@
   },
   "dependencies": {
     "@notionhq/client": "^2.2.3",
+    "@pdf-lib/fontkit": "^1.1.1",
     "cookie-parser": "~1.4.4",
     "debug": "~2.6.9",
     "ejs": "~2.6.1",
     "express": "~4.16.1",
     "http-errors": "~1.6.3",
-    "morgan": "~1.9.1"
+    "morgan": "~1.9.1",
+    "pdf-image": "^2.0.0",
+    "pdf-lib": "^1.17.1"
   }
 }
