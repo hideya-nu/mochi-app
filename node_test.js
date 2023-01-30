@@ -1,15 +1,16 @@
+//export {values};
+
 const http = require('http');
 const fs = require('fs');
 const url = require('url');
-const PDFImage = require("pdf-image").PDFImage;
-const pdfImage = new PDFImage("/images/企画書.pdf");
+//const pdfImage = new PDFImage("/images/企画書.pdf");
 const { Client } = require("@notionhq/client");
 
-//const hostname = '127.0.0.1';
-//const port = 3000;
+const hostname = '127.0.0.1';
+const port = 3000;
 
-const hostname = '0.0.0.0';
-const port = (process.env.PORT || 3000);
+//const hostname = '0.0.0.0';
+//const port = (process.env.PORT || 3000);
 
 const server = http.createServer(RouteSetting);
 
@@ -23,9 +24,13 @@ const indexJs = fs.readFileSync('./js/index.js', 'UTF-8');
 const textbookJs = fs.readFileSync('./js/textbook.js', 'UTF-8');
 
 const logoImg = fs.readFileSync('./images/ReNUT.png');
-const kikakuImg = fs.readFileSync('./images/企画書.pdf','UTF-8');
+//const kikakuImg = fs.readFileSync('./images/企画書.pdf','UTF-8');
 
-
+const  secret_key = 'secret_LAdznzDIRFB8nAz70O1XaXL09g851sjyLBP7vJBoOMB'
+const  db_id = '94934973a0e548f9be85bf1454b45ab7'
+const notion = new Client({
+  auth: secret_key,
+})
 
 server.listen(port,hostname, () => {
     console.log(`Server running at http://${hostname}:${port}/`);
@@ -38,6 +43,8 @@ function RouteSetting(req, res) {
         case'/html/index.html':
         // '/'または'index.html'にアクセスした時の処理
         res.writeHead(200, {'Content-Type': 'text/html'});
+        notionGet();
+        
         res.write(indexPage);
         res.end();
         break;
@@ -104,5 +111,34 @@ function RouteSetting(req, res) {
         res.end('お探しのページは見つかりません。');
         break;
     }
-  }
+}
 
+
+
+function notionGet(req, res, next) {
+  notion.databases.query({
+    database_id: db_id,
+  }).then(resp=>{
+
+    const values = [];
+    for (var n in resp.results){
+     var item = resp.results[n].properties;
+      try {
+        var val = [
+          item['教科書名'].title[0].plain_text,
+          item['渡し手学籍番号'].number,
+          item['受け取り手学籍番号'].number,
+        ];
+        
+        values.push(val);
+      }catch(e){
+      console.error(e);
+      }
+      //valueの中にnotionDataが二次元配列で格納
+      console.log(values[n][0]);
+      
+    }
+    module.exports = values;
+    //res.render('index', { title: 'notion',data: values });
+  });
+};

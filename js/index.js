@@ -1,4 +1,10 @@
+//import { values } from "../node_test.js";
+//var values = require('../node_test.js/values');
+
+<script type="text/javascript" src="../node_test.js"></script>
+
 var text;
+
 function clickSearch(){
     var textName = document.getElementById("tex").value;
     text = textName;
@@ -24,3 +30,9 @@ function myFunction() {
       }
     }
   }
+
+function notionOut(){
+  for (var n in resp.results){
+    console.log(values[n][0]);
+  }
+}
