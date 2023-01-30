@@ -4,7 +4,7 @@
   "version": "0.0.0",
   "private": true,
   "scripts": {
-    "start": "node node_ test.js"
+    "start": "node node_test.js"
   },
   "dependencies": {
     "@notionhq/client": "^2.2.3",
