@@ -1,7 +1,7 @@
 //import { values } from "../node_test.js";
 //var values = require('../node_test.js/values');
 
-<script type="text/javascript" src="../node_test.js"></script>
+//<script type="text/javascript" src="../node_test.js"></script>
 
 var text;
 
